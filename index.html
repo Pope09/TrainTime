@@ -1,0 +1,106 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Train Time</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+
+
+    <style>
+        .img {
+            background-color: #e65c00;
+        }
+    </style>
+
+</head>
+
+<body class="html">
+    <div class="container bg-#4d94ff">
+        <div class="row mb-1 ">
+            <div class="col-12">
+                <div class="jumbotron text-center text-light  img">
+                    <h1> Anytime is Train Time</h1>
+                    <h2>Choo Choo. Chee Chee.</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-1">
+            <div class="col-12">
+                <div class="card ">
+                    <div class="card-header bg-primary text-white">Current Train Schedule</div>
+                    <div class="card-body">
+                        <table class="table">
+                            <TBody>
+                                <thead>
+
+                                    <tr>
+
+                                        <th scope="col">Train Name</th>
+                                        <th scope="col">Destination</th>
+                                        <th scope="col">Frequency (min)</th>
+                                        <th scope="col">Next Arrival</th>
+                                        <th scope="col">Minutes Away</th>
+                                    </tr>
+
+                                </thead>
+                            </TBody>
+                        </table>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header bg-primary text-white">Add Train</div>
+                    <div class="card-body ">
+                        <form>
+                            <div class="form-group">
+                                <label for="employeeName">Train Name</label>
+                                <input type="text" class="form-control" id="TrainName">
+                            </div>
+                            <div class="form-group">
+                                <label for="role">Destination</label>
+                                <input type="text" class="form-control" id="destination">
+                            </div>
+                            <div class="form-group">
+                                <label for="startDate"> First Train Time (HH:mm. military time)</label>
+                                <input type="time" class="form-control" id="time">
+                            </div>
+                            <div class="form-group">
+                                <label for="monthlyRate">Frequency (min)</label>
+                                <input type="frequency" class="form-control" id="frequency">
+                            </div>
+                            <button type="submit" class="btn btn-primary float-left ml-1" id="submit">submit</button>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+    </div>
+
+    <script src="Trainlogic.js"> </script>
+
+</body>
+
+</html>
